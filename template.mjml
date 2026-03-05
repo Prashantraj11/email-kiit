@@ -1,0 +1,361 @@
+<mjml>
+  <mj-head>
+    <mj-title>Game of Codes - KIITFest 9.0</mj-title>
+
+    <mj-font name="Press Start 2P" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
+    <mj-font name="Space Mono" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" />
+    <mj-font name="VT323" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" />
+
+    <mj-attributes>
+      <mj-text font-family="'Space Mono', 'Courier New', monospace" color="#e0e0e0" line-height="1.7" />
+      <mj-button font-family="'Press Start 2P', 'Courier New', monospace" font-size="11px" border-radius="0px" inner-padding="18px 30px" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      /* ===== RETRO ARCADE THEME ===== */
+
+      body {
+        background-color: #0a0a1a;
+      }
+
+      /* Scanline overlay effect via pseudo-class on wrapper */
+      .scanline-bg {
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0,255,100,0.03) 0px,
+          rgba(0,255,100,0.03) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      }
+
+      /* Retro pixel border box */
+      .pixel-border {
+        border: 3px solid #ff00ff;
+        box-shadow:
+          0 0 10px rgba(255,0,255,0.3),
+          inset 0 0 10px rgba(255,0,255,0.05),
+          4px 4px 0px #1a0033,
+          -4px -4px 0px #1a0033;
+        background-color: rgba(15,0,30,0.8) !important;
+      }
+
+      /* Neon text glow */
+      .neon-gold {
+        color: #ffd700 !important;
+        text-shadow:
+          0 0 7px rgba(255,215,0,0.6),
+          0 0 15px rgba(255,215,0,0.3);
+      }
+
+      .neon-cyan {
+        color: #00ffcc !important;
+        text-shadow:
+          0 0 7px rgba(0,255,204,0.6),
+          0 0 15px rgba(0,255,204,0.3);
+      }
+
+      .neon-magenta {
+        color: #ff00ff !important;
+        text-shadow:
+          0 0 7px rgba(255,0,255,0.5),
+          0 0 15px rgba(255,0,255,0.2);
+      }
+
+      .neon-green {
+        color: #39ff14 !important;
+        text-shadow:
+          0 0 7px rgba(57,255,20,0.5),
+          0 0 15px rgba(57,255,20,0.2);
+      }
+
+      /* Divider style */
+      .retro-divider {
+        color: #ff00ff !important;
+        text-shadow: 0 0 5px rgba(255,0,255,0.4);
+        letter-spacing: 4px;
+      }
+
+      /* Detail card theming */
+      .detail-card {
+        border-left: 4px solid #00ffcc;
+        padding-left: 15px !important;
+        background: linear-gradient(90deg, rgba(0,255,204,0.05), transparent) !important;
+      }
+
+      /* CTA Button styles */
+      .cta-register a {
+        background: linear-gradient(135deg, #ff00ff, #8a2be2) !important;
+        border: 2px solid #ff00ff !important;
+        box-shadow: 0 0 15px rgba(255,0,255,0.4), 4px 4px 0px #2a0050;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .cta-register a:hover {
+        box-shadow: 0 0 25px rgba(255,0,255,0.7), 4px 4px 0px #2a0050;
+      }
+
+      .cta-whatsapp a {
+        background: #25D366 !important;
+        border: 2px solid #25D366 !important;
+        box-shadow: 0 0 15px rgba(37,211,102,0.3), 4px 4px 0px #0a3d1e;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      /* Quote block */
+      .quote-block {
+        border-left: 3px solid #ffd700;
+        padding-left: 12px !important;
+        background: linear-gradient(90deg, rgba(255,215,0,0.06), transparent) !important;
+      }
+
+      /* Grid-like background for event details */
+      .grid-bg {
+        background-image:
+          linear-gradient(rgba(255,0,255,0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,0,255,0.06) 1px, transparent 1px) !important;
+        background-size: 20px 20px !important;
+      }
+
+      /* Terminal cursor blink for heading */
+      .cursor-blink::after {
+        content: "█";
+        animation: blink 1s step-end infinite;
+        color: #39ff14;
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+
+      /* Prize badge */
+      .prize-badge {
+        display: inline-block;
+        border: 2px solid #ffd700;
+        padding: 8px 20px;
+        background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
+        box-shadow: 0 0 12px rgba(255,215,0,0.2);
+      }
+
+      /* Footer style */
+      .footer-text {
+        color: #666 !important;
+        font-size: 11px !important;
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body background-color="#0a0a1a">
+
+    <!-- ====== TOP ACCENT BAR ====== -->
+    <mj-section background-color="#ff00ff" padding="3px 0">
+      <mj-column>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="14px" color="#0a0a1a" letter-spacing="8px" padding="0">
+          ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== HEADER with LOGO ====== -->
+    <mj-section background-color="#0d0d2b" padding="25px 0 10px 0">
+      <mj-column>
+        <mj-image src="https://drive.google.com/uc?export=view&id=1ru2Cq3jciGmFEhEXQ0bgAD76SgmJFdre" width="160px" padding="0 0 10px 0"/>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="16px" color="#666" letter-spacing="6px" padding="0 0 5px 0">
+          PIXELS TO PURPOSE
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== POSTER ====== -->
+    <mj-section background-color="#0d0d2b" padding="0 20px 10px 20px">
+      <mj-column css-class="pixel-border" padding="6px">
+        <mj-image src="https://drive.google.com/uc?export=view&id=1c4UoB08psXhxRJEa-1ukdj0WHDiwpWzq" alt="Game of Codes Poster" padding="0" border-radius="0px"/>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== TITLE BANNER ====== -->
+    <mj-section background-color="#0d0d2b" padding="20px 20px 5px 20px">
+      <mj-column>
+        <mj-image src="https://drive.google.com/uc?export=view&id=1HhSpuwpEApPaV8Nl_K6BSU-aHyKXkPAf" width="280px" padding="0 0 15px 0" alt="Game of Codes Logo" />
+
+        <mj-text align="center" font-family="'Press Start 2P', 'Courier New', monospace" font-size="20px" css-class="neon-gold" padding="10px 0 8px 0" line-height="1.8">
+          Ready to Code &amp; Conquer?
+        </mj-text>
+
+        <mj-text align="center" css-class="retro-divider" font-family="'VT323', monospace" font-size="16px" padding="0 0 8px 0">
+          ═══════════════════════════
+        </mj-text>
+
+        <mj-text align="center" font-size="18px" padding="5px 0">
+          Join <span class="neon-cyan" style="font-weight:bold;">GAME OF CODES</span> @ KIITFest 9.0
+        </mj-text>
+
+        <mj-text align="center" padding="8px 0 15px 0">
+          <span class="prize-badge">🏆 Prize Pool: <b style="color:#ffd700;">₹16,000</b></span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== PIXEL DIVIDER ====== -->
+    <mj-section background-color="#0d0d2b" padding="0">
+      <mj-column>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="12px" css-class="neon-magenta" padding="0" letter-spacing="3px">
+          ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <mj-section background-color="#0d0d2b" padding="20px 25px" css-class="scanline-bg">
+      <mj-column css-class="pixel-border" padding="25px 20px">
+
+        <mj-text font-size="16px" padding="0 0 10px 0">
+          <span class="neon-green">$</span> Dear KIITians,
+        </mj-text>
+
+        <mj-text font-size="14px" padding="5px 0">
+Get ready to level up! As part of the highly anticipated KIITFest 9.0 (Pixels to Purpose), Kodewreck is thrilled to present GAME OF CODES.
+        </mj-text>
+
+        <mj-text align="center" font-style="italic" font-size="15px" css-class="quote-block" padding="15px 20px">
+          <span style="color:#ffd700;">"Decode, Play, Conquer: Your Journey Into Coding Greatness!"</span>
+        </mj-text>
+
+        <mj-text font-size="17px" padding="18px 0 8px 0">
+          <span class="neon-cyan">▸</span> <b style="color:#ff00ff;">What is Game of Codes?</b>
+        </mj-text>
+
+        <mj-text font-size="14px" padding="5px 0">
+It is a flagship competitive programming event designed to challenge your logical reasoning, algorithmic thinking, and problem-solving skills under pressure. We are bringing together passionate coders to engage in an intellectually stimulating and high-energy environment that celebrates technical excellence and innovation.
+        </mj-text>
+
+        <mj-text font-size="14px" padding="8px 0 0 0">
+This is your chance to showcase your skills on your home turf, compete with some of the brightest minds from colleges across the region, and be part of a coding battle where precision, strategy, and innovation define success!
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== PIXEL DIVIDER ====== -->
+    <mj-section background-color="#0d0d2b" padding="5px 0">
+      <mj-column>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="12px" css-class="neon-magenta" padding="0" letter-spacing="3px">
+          ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== EVENT DETAILS ====== -->
+    <mj-section background-color="#0f0025" padding="25px 25px" css-class="grid-bg">
+      <mj-column padding="0">
+
+        <mj-text align="center" font-family="'Press Start 2P', 'Courier New', monospace" font-size="16px" css-class="neon-gold" padding="0 0 20px 0" line-height="1.6">
+          EVENT DETAILS
+        </mj-text>
+
+        <mj-text align="center" font-size="16px" css-class="detail-card" padding="10px 15px">
+          📅 Date: <b style="color:#00ffcc;">7th March 2026</b>
+        </mj-text>
+
+        <mj-text align="center" font-size="16px" css-class="detail-card" padding="10px 15px">
+          ⏰ Time: <b style="color:#00ffcc;">9:00 AM Onwards</b>
+        </mj-text>
+
+        <mj-text align="center" font-size="16px" css-class="detail-card" padding="10px 15px">
+          📍 Venue: <b style="color:#00ffcc;">Campus 25</b>
+        </mj-text>
+
+        <mj-text align="center" font-size="16px" css-class="detail-card" padding="10px 15px">
+          🏆 Prize Pool: <b style="color:#ffd700;">Worth ₹16,000!</b>
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== PIXEL DIVIDER ====== -->
+    <mj-section background-color="#0d0d2b" padding="5px 0">
+      <mj-column>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="12px" css-class="neon-magenta" padding="0" letter-spacing="3px">
+          ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== REGISTRATION CTA ====== -->
+    <mj-section background-color="#0d0d2b" padding="25px 25px">
+      <mj-column>
+
+        <mj-text align="center" font-family="'Press Start 2P', 'Courier New', monospace" font-size="14px" css-class="neon-cyan" padding="0 0 12px 0" line-height="1.6">
+          HOW TO REGISTER
+        </mj-text>
+
+        <mj-text align="center" font-size="15px" padding="5px 0 20px 0" color="#aaaacc">
+Don't miss out on the action. Secure your spot now!
+        </mj-text>
+
+        <mj-button href="https://kiitfest.org/events" css-class="cta-register" padding="8px 0">
+          ▶ Register Now
+        </mj-button>
+
+        <mj-button href="https://chat.whatsapp.com/JSX4HKVqVWX5haOF8Uxgsv" css-class="cta-whatsapp" padding="8px 0 5px 0">
+          Join WhatsApp Updates
+        </mj-button>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== PIXEL DIVIDER ====== -->
+    <mj-section background-color="#0d0d2b" padding="5px 0">
+      <mj-column>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="12px" css-class="neon-magenta" padding="0" letter-spacing="3px">
+          ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== CONTACT / FOOTER ====== -->
+    <mj-section background-color="#080818" padding="25px 25px 15px 25px">
+      <mj-column>
+
+        <mj-text align="center" font-size="14px" color="#888" padding="0 0 8px 0">
+For queries contact
+        </mj-text>
+
+        <mj-text align="center" font-size="16px" padding="0 0 15px 0">
+          <b style="color:#ff00ff;">Prashant Raj</b><br/>
+          <span style="color:#00ffcc;">+91 72740 07730</span>
+        </mj-text>
+
+        <mj-text align="center" font-size="13px" color="#777" padding="5px 0">
+Stay connected with KIITFest on Instagram, Facebook, and the web at
+<b style="color:#ffd700;">kiitfest.org</b>
+        </mj-text>
+
+        <mj-text align="center" font-style="italic" font-size="14px" css-class="neon-green" padding="15px 0 10px 0">
+We look forward to seeing you there. Let the coding battle begin!
+        </mj-text>
+
+        <mj-text align="center" font-size="14px" padding="10px 0 5px 0">
+Best regards,<br/>
+<b style="color:#ff00ff;">Kodewreck Team KIITFest 9.0</b>
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- ====== BOTTOM ACCENT BAR ====== -->
+    <mj-section background-color="#ff00ff" padding="3px 0">
+      <mj-column>
+        <mj-text align="center" font-family="'VT323', monospace" font-size="14px" color="#0a0a1a" letter-spacing="8px" padding="0">
+          ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

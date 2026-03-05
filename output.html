@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="und" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <title>Game of Codes - KIITFest 9.0</title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      #outlook a { padding:0; }
+      body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+      table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+      p { display:block;margin:13px 0; }
+    </style>
+    <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+    <!--[if lte mso 11]>
+    <style type="text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+    
+      <!--[if !mso]><!-->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          @import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+        </style>
+      <!--<![endif]-->
+
+    
+    
+    <style type="text/css">
+      @media only screen and (min-width:480px) {
+        .mj-column-per-100 { width:100% !important; max-width: 100%; }
+      }
+    </style>
+    <style media="screen and (min-width:480px)">
+      .moz-text-html .mj-column-per-100 { width:100% !important; max-width: 100%; }
+    </style>
+    
+    
+  
+    
+    <style type="text/css">
+
+    @media only screen and (max-width:479px) {
+      table.mj-full-width-mobile { width: 100% !important; }
+      td.mj-full-width-mobile { width: auto !important; }
+    }
+  
+    </style>
+     
+    <style type="text/css">
+/* ===== RETRO ARCADE THEME ===== */
+
+      body {
+        background-color: #0a0a1a;
+      }
+
+      /* Scanline overlay effect via pseudo-class on wrapper */
+      .scanline-bg {
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0,255,100,0.03) 0px,
+          rgba(0,255,100,0.03) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      }
+
+      /* Retro pixel border box */
+      .pixel-border {
+        border: 3px solid #ff00ff;
+        box-shadow:
+          0 0 10px rgba(255,0,255,0.3),
+          inset 0 0 10px rgba(255,0,255,0.05),
+          4px 4px 0px #1a0033,
+          -4px -4px 0px #1a0033;
+        background-color: rgba(15,0,30,0.8) !important;
+      }
+
+      /* Neon text glow */
+      .neon-gold {
+        color: #ffd700 !important;
+        text-shadow:
+          0 0 7px rgba(255,215,0,0.6),
+          0 0 15px rgba(255,215,0,0.3);
+      }
+
+      .neon-cyan {
+        color: #00ffcc !important;
+        text-shadow:
+          0 0 7px rgba(0,255,204,0.6),
+          0 0 15px rgba(0,255,204,0.3);
+      }
+
+      .neon-magenta {
+        color: #ff00ff !important;
+        text-shadow:
+          0 0 7px rgba(255,0,255,0.5),
+          0 0 15px rgba(255,0,255,0.2);
+      }
+
+      .neon-green {
+        color: #39ff14 !important;
+        text-shadow:
+          0 0 7px rgba(57,255,20,0.5),
+          0 0 15px rgba(57,255,20,0.2);
+      }
+
+      /* Divider style */
+      .retro-divider {
+        color: #ff00ff !important;
+        text-shadow: 0 0 5px rgba(255,0,255,0.4);
+        letter-spacing: 4px;
+      }
+
+      /* Detail card theming */
+      .detail-card {
+        border-left: 4px solid #00ffcc;
+        padding-left: 15px !important;
+        background: linear-gradient(90deg, rgba(0,255,204,0.05), transparent) !important;
+      }
+
+      /* CTA Button styles */
+      .cta-register a {
+        background: linear-gradient(135deg, #ff00ff, #8a2be2) !important;
+        border: 2px solid #ff00ff !important;
+        box-shadow: 0 0 15px rgba(255,0,255,0.4), 4px 4px 0px #2a0050;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .cta-register a:hover {
+        box-shadow: 0 0 25px rgba(255,0,255,0.7), 4px 4px 0px #2a0050;
+      }
+
+      .cta-whatsapp a {
+        background: #25D366 !important;
+        border: 2px solid #25D366 !important;
+        box-shadow: 0 0 15px rgba(37,211,102,0.3), 4px 4px 0px #0a3d1e;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      /* Quote block */
+      .quote-block {
+        border-left: 3px solid #ffd700;
+        padding-left: 12px !important;
+        background: linear-gradient(90deg, rgba(255,215,0,0.06), transparent) !important;
+      }
+
+      /* Grid-like background for event details */
+      .grid-bg {
+        background-image:
+          linear-gradient(rgba(255,0,255,0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,0,255,0.06) 1px, transparent 1px) !important;
+        background-size: 20px 20px !important;
+      }
+
+      /* Terminal cursor blink for heading */
+      .cursor-blink::after {
+        content: "█";
+        animation: blink 1s step-end infinite;
+        color: #39ff14;
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+
+      /* Prize badge */
+      .prize-badge {
+        display: inline-block;
+        border: 2px solid #ffd700;
+        padding: 8px 20px;
+        background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
+        box-shadow: 0 0 12px rgba(255,215,0,0.2);
+      }
+
+      /* Footer style */
+      .footer-text {
+        color: #666 !important;
+        font-size: 11px !important;
+      }
+    </style>
+    
+  </head>
+  <body style="word-spacing:normal;background-color:#0a0a1a;">
+    
+    
+      <div
+         aria-label="Game of Codes - KIITFest 9.0" aria-roledescription="email" style="background-color:#0a0a1a;" role="article" lang="und" dir="auto"
+      >
+        <!-- ====== TOP ACCENT BAR ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ff00ff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#ff00ff;background-color:#ff00ff;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ff00ff;background-color:#ff00ff;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:3px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:14px;letter-spacing:8px;line-height:1.7;text-align:center;color:#0a0a1a;"
+      >▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== HEADER with LOGO ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:25px 0 10px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 10px 0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:160px;">
+              
+      <img
+         alt="" src="https://drive.google.com/uc?export=view&id=1ru2Cq3jciGmFEhEXQ0bgAD76SgmJFdre" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 5px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:16px;letter-spacing:6px;line-height:1.7;text-align:center;color:#666666;"
+      >PIXELS TO PURPOSE</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== POSTER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0 20px 10px 20px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="pixel-border-outlook" style="vertical-align:top;width:560px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix pixel-border" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:6px;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:548px;">
+              
+      <img
+         alt="Game of Codes Poster" src="https://drive.google.com/uc?export=view&id=1c4UoB08psXhxRJEa-1ukdj0WHDiwpWzq" style="border:0;border-radius:0px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="548" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== TITLE BANNER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 20px 5px 20px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:280px;">
+              
+      <img
+         alt="Game of Codes Logo" src="https://drive.google.com/uc?export=view&id=1HhSpuwpEApPaV8Nl_K6BSU-aHyKXkPAf" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="280" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="neon-gold" style="font-size:0px;padding:10px 0 8px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Press Start 2P', 'Courier New', monospace;font-size:20px;line-height:1.8;text-align:center;color:#e0e0e0;"
+      >Ready to Code &amp; Conquer?</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="retro-divider" style="font-size:0px;padding:0 0 8px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:16px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >═══════════════════════════</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:5px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:18px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >Join <span class="neon-cyan" style="font-weight:bold;">GAME OF CODES</span> @ KIITFest 9.0</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:8px 0 15px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:13px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      ><span class="prize-badge">🏆 Prize Pool: <b style="color:#ffd700;">₹16,000</b></span></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== PIXEL DIVIDER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" class="neon-magenta" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:12px;letter-spacing:3px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== MAIN CONTENT ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="scanline-bg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  class="scanline-bg" style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 25px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="pixel-border-outlook" style="vertical-align:top;width:550px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix pixel-border" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:25px 20px;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 10px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:16px;line-height:1.7;text-align:left;color:#e0e0e0;"
+      ><span class="neon-green">$</span> Dear KIITians,</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:5px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:14px;line-height:1.7;text-align:left;color:#e0e0e0;"
+      >Get ready to level up! As part of the highly anticipated KIITFest 9.0 (Pixels to Purpose), Kodewreck is thrilled to present GAME OF CODES.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="quote-block" style="font-size:0px;padding:15px 20px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:15px;font-style:italic;line-height:1.7;text-align:center;color:#e0e0e0;"
+      ><span style="color:#ffd700;">"Decode, Play, Conquer: Your Journey Into Coding Greatness!"</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:18px 0 8px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:17px;line-height:1.7;text-align:left;color:#e0e0e0;"
+      ><span class="neon-cyan">▸</span> <b style="color:#ff00ff;">What is Game of Codes?</b></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:5px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:14px;line-height:1.7;text-align:left;color:#e0e0e0;"
+      >It is a flagship competitive programming event designed to challenge your logical reasoning, algorithmic thinking, and problem-solving skills under pressure. We are bringing together passionate coders to engage in an intellectually stimulating and high-energy environment that celebrates technical excellence and innovation.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:8px 0 0 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:14px;line-height:1.7;text-align:left;color:#e0e0e0;"
+      >This is your chance to showcase your skills on your home turf, compete with some of the brightest minds from colleges across the region, and be part of a coding battle where precision, strategy, and innovation define success!</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== PIXEL DIVIDER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:5px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" class="neon-magenta" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:12px;letter-spacing:3px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== EVENT DETAILS ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="grid-bg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#0f0025" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  class="grid-bg" style="background:#0f0025;background-color:#0f0025;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0f0025;background-color:#0f0025;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:25px 25px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:550px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" class="neon-gold" style="font-size:0px;padding:0 0 20px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Press Start 2P', 'Courier New', monospace;font-size:16px;line-height:1.6;text-align:center;color:#e0e0e0;"
+      >EVENT DETAILS</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="detail-card" style="font-size:0px;padding:10px 15px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:16px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >📅 Date: <b style="color:#00ffcc;">7th March 2026</b></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="detail-card" style="font-size:0px;padding:10px 15px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:16px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >⏰ Time: <b style="color:#00ffcc;">9:00 AM Onwards</b></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="detail-card" style="font-size:0px;padding:10px 15px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:16px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >📍 Venue: <b style="color:#00ffcc;">Campus 25</b></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="detail-card" style="font-size:0px;padding:10px 15px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:16px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >🏆 Prize Pool: <b style="color:#ffd700;">Worth ₹16,000!</b></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== PIXEL DIVIDER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:5px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" class="neon-magenta" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:12px;letter-spacing:3px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== REGISTRATION CTA ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:25px 25px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:550px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" class="neon-cyan" style="font-size:0px;padding:0 0 12px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Press Start 2P', 'Courier New', monospace;font-size:14px;line-height:1.6;text-align:center;color:#e0e0e0;"
+      >HOW TO REGISTER</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:5px 0 20px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:15px;line-height:1.7;text-align:center;color:#aaaacc;"
+      >Don't miss out on the action. Secure your spot now!</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="cta-register" style="font-size:0px;padding:8px 0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
+        <tbody>
+          <tr>
+            <td
+               align="center" bgcolor="#414141" role="presentation" style="border:none;border-radius:0px;cursor:auto;mso-padding-alt:18px 30px;background:#414141;" valign="middle"
+            >
+              <a
+                 href="https://kiitfest.org/events" style="display:inline-block;background:#414141;color:#ffffff;font-family:'Press Start 2P', 'Courier New', monospace;font-size:11px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:18px 30px;mso-padding-alt:0px;border-radius:0px;" target="_blank"
+              >
+                ▶ Register Now
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="cta-whatsapp" style="font-size:0px;padding:8px 0 5px 0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
+        <tbody>
+          <tr>
+            <td
+               align="center" bgcolor="#414141" role="presentation" style="border:none;border-radius:0px;cursor:auto;mso-padding-alt:18px 30px;background:#414141;" valign="middle"
+            >
+              <a
+                 href="https://chat.whatsapp.com/JSX4HKVqVWX5haOF8Uxgsv" style="display:inline-block;background:#414141;color:#ffffff;font-family:'Press Start 2P', 'Courier New', monospace;font-size:11px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:18px 30px;mso-padding-alt:0px;border-radius:0px;" target="_blank"
+              >
+                Join WhatsApp Updates
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== PIXEL DIVIDER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0d0d2b" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d0d2b;background-color:#0d0d2b;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d0d2b;background-color:#0d0d2b;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:5px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" class="neon-magenta" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:12px;letter-spacing:3px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== CONTACT / FOOTER ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#080818" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#080818;background-color:#080818;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#080818;background-color:#080818;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:25px 25px 15px 25px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:550px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 8px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:14px;line-height:1.7;text-align:center;color:#888888;"
+      >For queries contact</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 15px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:16px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      ><b style="color:#ff00ff;">Prashant Raj</b><br/>
+          <span style="color:#00ffcc;">+91 72740 07730</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:5px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:13px;line-height:1.7;text-align:center;color:#777777;"
+      >Stay connected with KIITFest on Instagram, Facebook, and the web at
+<b style="color:#ffd700;">kiitfest.org</b></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" class="neon-green" style="font-size:0px;padding:15px 0 10px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:14px;font-style:italic;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >We look forward to seeing you there. Let the coding battle begin!</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:10px 0 5px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'Space Mono', 'Courier New', monospace;font-size:14px;line-height:1.7;text-align:center;color:#e0e0e0;"
+      >Best regards,<br/>
+<b style="color:#ff00ff;">Kodewreck Team KIITFest 9.0</b></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    <!-- ====== BOTTOM ACCENT BAR ====== -->
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ff00ff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#ff00ff;background-color:#ff00ff;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ff00ff;background-color:#ff00ff;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:3px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:top;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:'VT323', monospace;font-size:14px;letter-spacing:8px;line-height:1.7;text-align:center;color:#0a0a1a;"
+      >▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    
+      </div>
+    
+  </body>
+</html>
+  
